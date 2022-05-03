@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOHAK MAHESHWARI</title>
+    <!-- <link rel="stylesheet" href="https://fonts.google.com/specimen/Oxygen"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            /* background-color:
+                /*rgb(220, 233, 238)*/
+            /* rgb(228, 220, 220); */
+            /*  rgb(228, 225, 225); */
+            background: url('background.jpg');
+            /* background-repeat:repeat; */
+            height: 100vh;
+            background-size: cover;
+            font-family: sans-serif;
+        }
+
+        /* #first {
+            border: 3px solid blue;
+            border-radius: 10px;
+            font-family: cursive;
+            padding: 24px;
+            margin-left: 444px;
+            margin-top: 23px;
+            background-color: rgb(65, 202, 173);
+            width: 480px;
+            box-sizing: border-box;
+        } */
+
+        /* #first:hover {
+            color: red;
+            background-color: rgb(204, 230, 178);
+        } */
+
+        #img {
+            height:
+                /* 272*/
+                253px;
+            width:
+                /*207*/
+                188px;
+            border: 10px solid rgb(214, 234, 41);
+            border-radius: 25%;
+            margin-right: 45px;
+            border-style: none;
+            transition: transform 2s;
+        }
+
+        #img:hover {
+            transform: scaleX(-1);
+            /* transform: scale(1.2); */
+        }
+
+        p {
+            font-size: x-large;
+            padding-left: 50px;
+            text-align: unset;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+        }
+
+        #p1 {
+            padding-left: 50px;
+            /* color: white; */
+        }
+
+        #p1:hover {
+            color: red;
+        }
+
+        #second {
+            width: 384px;
+            margin-left: 32%;
+            color:
+                /*#cac530*/
+                rgb(0, 0, 0);
+            border: none;
+            border-radius: 12px;
+            animation-name: second;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes second{
+            0%{background-color: rgb(231, 58, 124)}
+            25%{background-color: rgb(86, 120, 182)}
+            50%{background-color: greenyellow}
+            75%{background-color: rgb(235, 165, 212)}
+            100%{background-color:rgb(231, 58, 124)}
+        }
+         
+
+        .navbar {
+            background-color:black;
+            border-radius: 20px;
+
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 20px 20px;
+        }
+
+        .navbar li a {
+            padding: 13px 30px;
+            text-decoration: none;
+            color: white;
+            font-size: larger;
+            font-weight: bold;
+        }
+
+        .navbar li a:hover {
+            background-color: rgb(27, 224, 231);
+            color: black;
+            border-radius: 12px;
+        }
+
+        .search {
+            float: right;
+            padding: 15px 35px;
+            /* background-color: black; */
+        }
+
+        .navbar input {
+            border: 2px solid rgb(72, 47, 216);
+            border-radius: 8px;
+            padding: 6px 7px;
+            background-color: white;
+            border: none;
+            width: 160px;
+        }
+
+        /* .navbar input:active{
+           border: none; */
+        }
+
+        .navbar input:hover {
+            background-color: rgb(225, 228, 227);
+        }
+
+        #but {
+            background-color: yellow;
+            color: black;
+            padding: 5px 0px;
+            border-radius: 5px;
+            border: none;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        #but:hover {
+            cursor: pointer;
+            background-color:
+                /*rgb(15, 114, 153)*/
+                black;
+            color: yellow;
+        }
+
+        .headimg {
+            height: 500px;
+            width: 1341px;
+        }
+
+        .for {
+            border: none;
+            border-radius: 20%;
+            height: 236px;
+            width: 360px;
+            transition: transform 2s;
+            margin-left: 39%;
+            /* border-radius: 50%; */
+        }
+
+        .for:hover {
+            transform: scale(1.2);
+        }
+
+        #main {
+            border: none;
+            border-radius: 15px;
+            /* background-color:aqua; */
+            color: black;
+            margin-left: 20px;
+        }
+
+        /* #main:hover {
+            color: rgb(25, 110, 238);
+            background-color: rgb(212, 243, 180);
+        } */
+
+        .icon img {
+            float: left;
+            height: 35px;
+            width: 35px;
+            padding: 15px 43px;
+            margin: 80px 0px;
+            position: relative;
+            /* left: 35%; */
+            /* background-color:aqua; */
+            border: none;
+        }
+
+        .icon img:hover {
+            background-color: yellow;
+        }
+
+        .centerdiv {
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .centerdiv a {
+            height: 80px;
+            width: 80px;
+            background-color:
+                /*#f5f6fa*/
+                white;
+            border-radius: 50px;
+            text-align: center;
+            margin: 10px;
+            box-shadow: 1px 4px 2px 2px
+                /*#dcdde1*/
+                rgb(7, 65, 80);
+            line-height: 93px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .centerdiv a i {
+            font-size: 30px;
+            transition: all 0.3s linear;
+        }
+
+        .centerdiv a:hover i {
+            transform: scale(1.4);
+        }
+
+        .fa-instagram {
+            color: #bc2a8d;
+        }
+
+        .fa-linkedin {
+            color: #0097e6;
+        }
+
+        .centerdiv a::before {
+            content: "";
+            width: 120%;
+            height: 120%;
+            position: absolute;
+            top: 90%;
+            left: -50%;
+            /* background-color: #00a8ff; */
+            background-color: rgb(246, 246, 66);
+            transform: rotate(60deg);
+        }
+
+        .centerdiv a:hover:before {
+            animation: socialicons 1s 1;
+        }
+
+        @keyframes socialicons {
+            0% {
+                top: 90%;
+                left: -50%;
+            }
+
+            50% {
+                top: -70%;
+                left: -10%;
+            }
+
+            100% {
+                top: -10%;
+                left: -10%;
+            }
+        }
+
+        .pthead {
+            font-size: larger;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="headimg.jpg" class="headimg">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">About Me</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="sign in.html">Sign in</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search this website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <!-- <h1 id="first" align="center">Hey guys this is my first portfolio here......I hope You'll like it :) </h1> -->
+    <img src="mohak1.jpg" id="img" align="right"><br><br>
+    <div>
+        <p id="p1"><b>Hey guys Mohak this side......This is my first portolio on Web D. So I hope you all will
+                appreciate
+                my efforts...:) </b>
+            </b></p>
+    </div>
+    <h1 id="second" align="center">My Short Intro :)</h1>
+    <div>
+        <p>
+            Hello, my name is <b>MOHAK MAHESHWARI</b> and I am a resident of KOTA (RAJ),INDIA. My education till
+            10th
+            is from INDORE (MP). After that I came kota to continue my higher studies for entrance into an Engineering
+            College. After securing a descent rank in Joint Entrance Examination I locked my seat into a government
+            college,
+            <mark>Rajasthan Technical University,Kota</mark>. Here I am persuing my bachelor's degree in <b>Computer
+                Science and Engineering</b>.<br><br>
+            <hr style="width:50%; height: 5px; background-color:rgb(18, 167, 92);">
+        </p>
+    </div><br>
+    <div>
+        <img src="download.jpg" class="for"><br>
+        <span id="main" style="font-size:50px"><b>Content on this page</b></span>
+        <p>This web page is only for practice purpose and I dont have any strong content to show on it right now
+            and also due to this <b>*some buttons in the navigation bar are not working because they are kept only for
+                decoration purpose*.</b> Kindly
+            ignore that part and I am working on it and soon will give you a beautiful page :)</p><br>
+        <hr style="width:50%; height: 5px; background-color:rgb(18, 167, 92);"><br><br>
+        <img src="new.jpg" class="for"><br>
+        <span id="main" style="font-size:50px"><b>Coding</b></span>
+        <p>Coding is a skill where you take instructions (the steps in a task) and translate it into a language the
+            computer understands since computers do not communicate like humans. They communicate in a language called
+            BINARY and it is uses 0’s and 1’s.
+
+            Coders write the instructions using a programming language.
+
+            This programming language translates human code into computer code known as software.If you are new to
+            coding then you must go through certain videos on youtube or you can take the help from
+            google on how to start at the basic
+            level and what to do first.</p><br>
+        <hr style="width:50%; height: 5px; background-color:rgb(18, 167, 92);"><br><br>
+        <img src="images.jpg" class="for"><br>
+        <span id="main" style="font-size: 50px"><b>How to master a programming language ?</b></span><br><br>
+        <p>
+            <span class="pthead">1. Learn by doing. Always play with the code while learning</span><br><br>
+
+
+            With every new subject, the sooner you start playing with the code, the faster you will learn the given
+            concepts. Even if you blaze through an entire chapter of reading and a topic like for loops seems
+            straightforward – so a monkey could do it – you’ll still be scratching your head when tasked to implement
+            the code for the first time. You’ll think, “wait, what was that one piece of syntax again?” As the saying
+            goes, you need to “use it or lose it”, because despite the evolution of technology, this ole’ proverb holds
+            true when learning to code.
+
+            Hint: Build a project as you go through the material. A personal project is often the best starting
+            point.<br><br>
+
+
+
+            <span class="pthead"> 2. Grasp the fundamentals for long-term benefits</span><br><br>
+            Learn programming faster 1
+
+            As elementary as they may appear at first, programming fundamentals always need to come first: the better
+            you understand them, the easier it is to learn more advanced concepts. From our experience at Coding Dojo,
+            students who rush through the beginning of our courses – where we focus most on web development fundamentals
+            – are often the first to get stuck as we transition into more advanced material, such as back-end
+            programming. So before you ditch the first class of computer science 101, or skip chapter one of an online
+            tutorial, keep in mind that you are overlooking the most important step in your learning.
+
+            Hint: Read this great article about the 5 Basic Concepts of Any Programming Language<br><br>
+
+
+
+            <span class="pthead"> 3. Code by hand. It sharpens proficiency and you’ll need it to get a
+                job</span><br><br>
+            Learn programming faster
+
+            Computer monitors become thinner, hard drives lighter, and programming languages more powerful, but
+            coding-by-hand still remains one of the most effective methods to learn how to program. Be it on a
+            whiteboard or notebook, coding-by-hand requires further caution, precision, and intent behind every line of
+            code. Because unlike on a computer, you can’t run hand-written code midway through the sheet to check if the
+            work is correct. Although more time consuming, this restriction will mold you into a more fundamentally
+            sound developer, both in the classroom and the job market. For college exams and technical interviews – a
+            critical component of the job interview process – you will have to code-by-hand, because not only is this
+            good for learning, but it’s universally known to be the ultimate test for a programmer’s proficiency. So
+            start early and get used to this old-school practice.<br><br>
+
+
+
+            <!-- <span class="pthead"> 4. Ask for help. You’ll need it</span><br><br>
+            Learn programming faster
+
+            As awesome as it would be to become the next Steve Jobs on your own, the reality is that people learn faster
+            with mentors and peer feedback. What may seem like an immovable bug or topic could be quickly alleviated by
+            a fresh pair of eyes or a new interpretation of the subject. Whether it’s online or in-person, ignore the
+            trolls and don’t be afraid to ask for help, because every programmer has been in your shoes before. Besides,
+            most developers love to code, and if there’s one thing that passionate individuals enjoy, it’s to share
+            their knowledge with others.
+
+            Word of Warning: At Coding Dojo we suggest using the 20 minute rule. Take at least 20 minutes to figure
+            something out on your own before asking for help. There’s a good chance that the answer is already in front
+            of you, and besides, struggling makes you a better programmer overall.
+
+            Hint: Stackoverlfow and learn programming are gold mines for online programming assistance.<br><br> -->
+
+
+
+            <span class="pthead"> 4. Seek out more online resources. There’s a wealth of content</span><br><br>
+
+            If a particular concept doesn’t make sense, be it on in a textbook, or during class lecture, maintain your
+            confidence and look for alternate online resources to learn the same content. Everyone learns differently,
+            and just because one source doesn’t make sense, doesn’t mean there’s something wrong with you. It means that
+            you’re not clicking with the delivery of the material. The online resources to learn computer programming
+            are endless, and there’s always tutorial, or blog explanation that will make the material-at-hand crystal
+            clear.
+
+            Hint: Don’t underestimate the power of search.<br><br>
+
+
+
+            <span class="pthead">5.Take breaks when debugging</span><br><br>
+
+
+            When debugging, it’s easy to go down the rabbit hole for hours, and there’s no guarantee that you will fix
+            the problem. To avoid this, it’s best to step away from the for a few hours, and return with a fresh
+            perspective. Not only is this a guaranteed way to help solve the problem, but you’ll also save yourself
+            hours of headache. So if help isn’t available – to touch on our previous tip about seeking advice – consider
+            taking a break to clear your mind and return later. In the meantime, the bug won’t be going anywhere, and
+            you’ll at least restore some needed sanity to improve productivity.<br><br>
+
+            <!-- So if you want to master coding then you must practice on a daily basis and going through as many questions
+            as
+            you can (of whatever language you are using) and <b>skipping practice for just one day also may cause
+                you a great lose!!.</b> So be loyal and honest.</p> -->
+            <b>To do so, you should expect to fail repeatedly and be patient with your progress because becoming an
+                expert
+                at anything requires hard work and time. And if a single doubt ever clouds your mind, remember that
+                every
+                programmer this path before – none of them more destined to become a developer than you. Whichever path
+                you
+                are currently on, be it college or coding boot camp, the only barrier to success is your work ethic and
+                confidence to persevere.</b>
+    </div><br><br>
+
+    <div>
+        <p style="text-align: left; font-size:small;"><mark>*The above content has been taken from google*</mark></p>
+    </div>
+    <!-- <div>
+        <span>
+            <img src="insta icon.png" class="icon">
+            <a href="https://instagram.com/maheshwari_mohak?igshid=1rxfpzjz2i6tc" target="_blank"><button
+                    id="but">Instagram
+                </button></a><br><br>
+            <img src="fb icon.png" alt="facebook logo png file @transparentpng.com" class="icon">
+            <a href="https://m.facebook.com/profile.php?id=100037686457167" target="_blank"> <button id="but">Facebook
+                </button></a><br><br>
+            <img src="gfg icon.png" class="icon">
+            <a href="https://auth.geeksforgeeks.org/user/mohakmaheshwari1205/profile" target="_blank"><button
+                    id="but">Geeks for Geeks
+                </button></a>
+        </span>
+    </div> -->
+    <!-- <div class="icon">
+        <ul>
+            <li>
+                <a href="https://instagram.com/maheshwari_mohak?igshid=1rxfpzjz2i6tc" target="_blank"><img src="insta icon.png"></a>
+               <a href="https://www.facebook.com/mohak.maheshwari.100" target="_blank"> <img src="fb icon.png"></a>
+                <a href="#" target="_blank"><img src="linkedin icon.png"></a>
+            </li>
+        </ul>
+    </div> -->
+
+    <div class="centerdiv">
+        <a href="https://www.facebook.com/mohak.maheshwari.100" target="_blank">
+            <i class="fa fa-facebook"></i>
+        </a>
+        <a href="https://instagram.com/maheshwari_mohak?igshid=1rxfpzjz2i6tc" target="_blank">
+            <i class="fa fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/mohak-maheshwari-00b90b1b4/" target="_blank">
+            <i class="fa fa-linkedin"></i>
+        </a>
+    </div>
+</body>
+
+</html>
